@@ -124,7 +124,7 @@ const pools: SerializedPoolConfig[] =
           harvest: false,
           tokenPerBlock: '0.317',
           sortOrder: 5,
-          isFinished: false,
+          isFinished: true,
           enableEmergencyWithdraw: true,
         },
         {

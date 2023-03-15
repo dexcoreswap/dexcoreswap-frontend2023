@@ -40,7 +40,7 @@ const Menu = (props) => {
       globalMenu={
         <>
           <GlobalSettings />
-          <NetworkSwitcher />
+          {/* <NetworkSwitcher /> */}
         </>
       }
       banner={showPhishingWarningBanner && typeof window !== 'undefined' && <PhishingWarningBanner />}
