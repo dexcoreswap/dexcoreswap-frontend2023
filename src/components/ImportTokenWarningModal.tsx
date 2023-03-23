@@ -1,4 +1,4 @@
-import { Token } from '@archerswap-sdk/sdk'
+import { Token } from '@archerswap-sdk'
 import { Modal, InjectedModalProps } from 'packages/uikit'
 import ImportToken from 'components/SearchModal/ImportToken'
 import { useTranslation } from 'contexts/Localization'

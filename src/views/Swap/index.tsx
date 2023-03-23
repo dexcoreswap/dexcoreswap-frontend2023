@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import styled from 'styled-components'
-import { CurrencyAmount, JSBI, Token, Trade } from '@archerswap-sdk/sdk'
+import { CurrencyAmount, JSBI, Token, Trade } from '@archerswap-sdk'
 import {
   Button,
   Text,

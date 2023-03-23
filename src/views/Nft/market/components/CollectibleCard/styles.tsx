@@ -12,7 +12,7 @@ import {
   WalletFilledIcon,
   Skeleton,
 } from 'packages/uikit'
-import { Price } from '@archerswap-sdk/sdk'
+import { Price } from '@archerswap-sdk'
 import { useTranslation } from 'contexts/Localization'
 import { multiplyPriceByAmount } from 'utils/prices'
 import styled from 'styled-components'

@@ -1,6 +1,6 @@
 archerswap-sdkarcherswap-sdkimport styled from 'styled-components'
 import { Tag, Flex, Heading, Skeleton } from 'packages/uikit'
-import { Token } from '@archerswap-sdk/sdk'
+import { Token } from '@archerswap-sdk'
 import { FarmAuctionTag, CoreTag } from 'components/Tags'
 import { TokenPairImage } from 'components/TokenImage'
 

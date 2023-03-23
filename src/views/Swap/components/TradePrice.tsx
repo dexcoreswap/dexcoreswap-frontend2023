@@ -1,4 +1,4 @@
-import { Price } from '@archerswap-sdk/sdk'
+import { Price } from '@archerswap-sdk'
 import { Text, AutoRenewIcon } from 'packages/uikit'
 import { StyledBalanceMaxMini } from './styleds'
 

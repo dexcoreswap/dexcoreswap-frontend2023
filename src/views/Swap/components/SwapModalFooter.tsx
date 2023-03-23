@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import styled from 'styled-components'
-import { Trade, TradeType } from '@archerswap-sdk/sdk'
+import { Trade, TradeType } from '@archerswap-sdk'
 import { Button, Text, AutoRenewIcon } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { Field } from 'state/swap/actions'

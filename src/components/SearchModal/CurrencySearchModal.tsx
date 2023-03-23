@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { Currency, Token } from '@archerswap-sdk/sdk'
+import { Currency, Token } from '@archerswap-sdk'
 import {
   ModalContainer,
   ModalHeader,

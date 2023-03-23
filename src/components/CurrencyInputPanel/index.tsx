@@ -1,4 +1,4 @@
-import { Currency, Pair, Token } from '@archerswap-sdk/sdk'
+import { Currency, Pair, Token } from '@archerswap-sdk'
 import { Button, ChevronDownIcon, Text, useModal, Flex, Box, MetamaskIcon } from 'packages/uikit'
 import styled from 'styled-components'
 import { registerToken } from 'utils/wallet'

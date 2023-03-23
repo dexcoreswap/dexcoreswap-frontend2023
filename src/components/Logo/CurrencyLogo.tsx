@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@archerswap-sdk/sdk'
+import { Currency, ETHER, Token } from '@archerswap-sdk'
 import { VelasIcon } from 'packages/uikit'
 import { useMemo } from 'react'
 import styled from 'styled-components'

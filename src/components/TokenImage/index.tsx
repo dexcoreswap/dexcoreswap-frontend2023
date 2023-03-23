@@ -5,7 +5,7 @@ import {
   ImageProps,
 } from 'packages/uikit'
 import tokens from 'config/constants/tokens'
-import { Token } from '@archerswap-sdk/sdk'
+import { Token } from '@archerswap-sdk'
 import getTokenLogoURL from 'utils/getTokenLogoURL'
 
 interface TokenPairImageProps extends Omit<UIKitTokenPairImageProps, 'primarySrc' | 'secondarySrc'> {

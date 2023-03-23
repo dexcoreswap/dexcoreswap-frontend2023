@@ -1,4 +1,4 @@
-import { ChainId } from '@archerswap-sdk/sdk'
+import { ChainId } from '@archerswap-sdk'
 import { CHAIN_ID } from 'config/constants/networks'
 
 const chainId = parseInt(CHAIN_ID, 10) as ChainId

@@ -1,4 +1,4 @@
-import { Currency, currencyEquals, JSBI, Price } from '@archerswap-sdk/sdk'
+import { Currency, currencyEquals, JSBI, Price } from '@archerswap-sdk'
 import tokens from 'config/constants/tokens'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useMemo } from 'react'

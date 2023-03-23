@@ -1,5 +1,5 @@
 import { CSSProperties } from 'react'
-import { Token } from '@archerswap-sdk/sdk'
+import { Token } from '@archerswap-sdk'
 import { Button, Text, CheckmarkCircleIcon, useMatchBreakpoints } from 'packages/uikit'
 import { AutoRow, RowFixed } from 'components/Layout/Row'
 import { AutoColumn } from 'components/Layout/Column'

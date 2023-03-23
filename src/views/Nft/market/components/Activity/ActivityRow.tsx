@@ -12,7 +12,7 @@ import {
 } from 'packages/uikit'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import { Activity, NftToken } from 'state/nftMarket/types'
-import { Price } from '@archerswap-sdk/sdk'
+import { Price } from '@archerswap-sdk'
 import { getBscScanLink } from 'utils'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import ProfileCell from 'views/Nft/market/components/ProfileCell'

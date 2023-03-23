@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { useWeb3React } from '@web3-react/core'
-import { Price } from '@archerswap-sdk/sdk'
+import { Price } from '@archerswap-sdk'
 import { Button, Grid, Text, Flex, Box, VelasIcon, useModal, Skeleton } from 'packages/uikit'
 import { formatNumber } from 'utils/formatBalance'
 import { ContextApi } from 'contexts/Localization/types'

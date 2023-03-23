@@ -1,4 +1,4 @@
-import { CurrencyAmount, JSBI } from '@archerswap-sdk/sdk'
+import { CurrencyAmount, JSBI } from '@archerswap-sdk'
 import { maxAmountSpend } from './maxAmountSpend'
 
 describe('maxAmountSpend', () => {

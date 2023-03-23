@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from 'react'
-import { currencyEquals, Trade } from '@archerswap-sdk/sdk'
+import { currencyEquals, Trade } from '@archerswap-sdk'
 import { InjectedModalProps } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import TransactionConfirmationModal, {

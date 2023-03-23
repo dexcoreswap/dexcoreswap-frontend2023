@@ -1,4 +1,4 @@
-import { Token } from '@archerswap-sdk/sdk'
+import { Token } from '@archerswap-sdk'
 import { SerializedToken } from 'config/constants/types'
 import { WrappedTokenInfo } from 'state/types'
 

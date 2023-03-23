@@ -1,4 +1,4 @@
-import { ChainId } from '@archerswap-sdk/sdk'
+import { ChainId } from '@archerswap-sdk'
 import { TokenList } from '@uniswap/token-lists'
 import { useMemo } from 'react'
 import uniqBy from 'lodash/uniqBy'

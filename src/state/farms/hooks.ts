@@ -1,4 +1,4 @@
-import { ChainId } from '@archerswap-sdk/sdk'
+import { ChainId } from '@archerswap-sdk'
 import { useWeb3React } from '@web3-react/core'
 import BigNumber from 'bignumber.js'
 import { farmsConfig, SLOW_INTERVAL } from 'config/constants'

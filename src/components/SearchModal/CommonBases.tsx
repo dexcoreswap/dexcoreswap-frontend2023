@@ -1,4 +1,4 @@
-import { ChainId, Currency, currencyEquals, ETHER, Token } from '@archerswap-sdk/sdk'
+import { ChainId, Currency, currencyEquals, ETHER, Token } from '@archerswap-sdk'
 import { Text } from 'packages/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'

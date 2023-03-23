@@ -1,4 +1,4 @@
-import { Token } from '@archerswap-sdk/sdk'
+import { Token } from '@archerswap-sdk'
 import { Flex, Message, MessageText, useMatchBreakpoints } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { memo } from 'react'

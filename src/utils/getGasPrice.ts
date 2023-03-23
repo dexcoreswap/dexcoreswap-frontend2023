@@ -1,4 +1,4 @@
-import { ChainId } from '@archerswap-sdk/sdk'
+import { ChainId } from '@archerswap-sdk'
 import { CHAIN_ID } from 'config/constants/networks'
 import store from 'state'
 import { GAS_PRICE_GWEI } from 'state/types'

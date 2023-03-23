@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react'
-import { Currency, CurrencyAmount, Fraction, Percent, Token, TokenAmount } from '@archerswap-sdk/sdk'
+import { Currency, CurrencyAmount, Fraction, Percent, Token, TokenAmount } from '@archerswap-sdk'
 import { Flex, InjectedModalProps, Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import TransactionConfirmationModal, {

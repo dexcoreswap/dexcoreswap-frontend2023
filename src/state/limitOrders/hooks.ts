@@ -1,7 +1,7 @@
 import JSBI from 'jsbi'
 import { useDispatch, useSelector } from 'react-redux'
 import { ParsedUrlQuery } from 'querystring'
-import { Currency, CurrencyAmount, TokenAmount, Trade, Token, Price, ETHER } from '@archerswap-sdk/sdk'
+import { Currency, CurrencyAmount, TokenAmount, Trade, Token, Price, ETHER } from '@archerswap-sdk'
 import { useState, useEffect, useCallback, useMemo } from 'react'
 import { DEFAULT_INPUT_CURRENCY, DEFAULT_OUTPUT_CURRENCY } from 'config/constants'
 import { useRouter } from 'next/router'

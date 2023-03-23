@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks'
 import { mainnetTokens } from 'config/constants/tokens'
 import { createReduxWrapper } from 'testUtils'
-import { Pair, TokenAmount, CurrencyAmount, Trade } from '@archerswap-sdk/sdk'
+import { Pair, TokenAmount, CurrencyAmount, Trade } from '@archerswap-sdk'
 import * as UsePairs from './usePairs'
 import * as Trades from './Trades'
 

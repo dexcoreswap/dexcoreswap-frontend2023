@@ -1,4 +1,4 @@
-import { Trade, TradeType } from '@archerswap-sdk/sdk'
+import { Trade, TradeType } from '@archerswap-sdk'
 import { Text } from 'packages/uikit'
 import { Field } from 'state/swap/actions'
 import { useTranslation } from 'contexts/Localization'

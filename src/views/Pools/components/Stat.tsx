@@ -1,4 +1,4 @@
-import { Token } from '@archerswap-sdk/sdk'
+import { Token } from '@archerswap-sdk'
 import Balance from 'components/Balance'
 import { Flex, Skeleton, Text, TooltipText, useTooltip } from 'packages/uikit'
 import BigNumber from 'bignumber.js'

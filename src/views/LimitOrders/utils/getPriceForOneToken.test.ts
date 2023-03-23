@@ -1,4 +1,4 @@
-import { JSBI, Token, TokenAmount } from '@archerswap-sdk/sdk'
+import { JSBI, Token, TokenAmount } from '@archerswap-sdk'
 import getPriceForOneToken from './getPriceForOneToken'
 
 const WAG = new Token(56, '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82', 18, 'WAG', 'WagyuSwap Token')

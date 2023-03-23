@@ -1,5 +1,5 @@
 import { Fragment, memo } from 'react'
-import { Trade } from '@archerswap-sdk/sdk'
+import { Trade } from '@archerswap-sdk'
 import { Text, Flex, ChevronRightIcon } from 'packages/uikit'
 import { unwrappedToken } from 'utils/wrappedCurrency'
 

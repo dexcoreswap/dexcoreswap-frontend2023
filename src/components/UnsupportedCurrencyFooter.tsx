@@ -1,4 +1,4 @@
-import { Currency, Token } from '@archerswap-sdk/sdk'
+import { Currency, Token } from '@archerswap-sdk'
 import { Button, Text, Modal, useModal, InjectedModalProps, Link } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import styled from 'styled-components'

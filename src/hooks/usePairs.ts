@@ -1,4 +1,4 @@
-import { TokenAmount, Pair, Currency } from '@archerswap-sdk/sdk'
+import { TokenAmount, Pair, Currency } from '@archerswap-sdk'
 import { useMemo } from 'react'
 import IPancakePairABI from 'config/abi/IPancakePair.json'
 import { Interface } from '@ethersproject/abi'

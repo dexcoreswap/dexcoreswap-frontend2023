@@ -1,4 +1,4 @@
-import { Currency } from '@archerswap-sdk/sdk'
+import { Currency } from '@archerswap-sdk'
 import CurrencyLogo from 'components/Logo/CurrencyLogo'
 import TextIcon from './TextIcon'
 

@@ -1,4 +1,4 @@
-import { JSBI, Price, Token } from '@archerswap-sdk/sdk'
+import { JSBI, Price, Token } from '@archerswap-sdk'
 import getRatePercentageDifference from './getRatePercentageDifference'
 import { getRatePercentageMessage, PercentageDirection } from './getRatePercentageMessage'
 

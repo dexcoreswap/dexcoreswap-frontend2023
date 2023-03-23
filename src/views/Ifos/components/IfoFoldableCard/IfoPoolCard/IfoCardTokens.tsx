@@ -14,7 +14,7 @@ import {
   ErrorIcon,
 } from 'packages/uikit'
 import { useWeb3React } from '@web3-react/core'
-import { Token } from '@archerswap-sdk/sdk'
+import { Token } from '@archerswap-sdk'
 import { Ifo, PoolIds } from 'config/constants/types'
 import tokens from 'config/constants/tokens'
 import { wagVlxLpToken } from 'config/constants/ifo'

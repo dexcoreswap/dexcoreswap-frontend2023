@@ -1,5 +1,5 @@
 import React from 'react'
-import { Currency, Percent, Price } from '@archerswap-sdk/sdk'
+import { Currency, Percent, Price } from '@archerswap-sdk'
 import styled from 'styled-components'
 import { Input, Flex, Text, Button, AutoRenewIcon, SyncAltIcon, HelpIcon, useTooltip } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'

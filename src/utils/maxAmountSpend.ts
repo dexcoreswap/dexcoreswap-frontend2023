@@ -1,4 +1,4 @@
-import { CurrencyAmount, ETHER, JSBI } from '@archerswap-sdk/sdk'
+import { CurrencyAmount, ETHER, JSBI } from '@archerswap-sdk'
 import { MIN_BNB } from '../config/constants'
 
 /**

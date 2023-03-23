@@ -1,4 +1,4 @@
-import { Percent } from '@archerswap-sdk/sdk'
+import { Percent } from '@archerswap-sdk'
 import { TranslateFunction } from 'contexts/Localization/types'
 
 export enum PercentageDirection {

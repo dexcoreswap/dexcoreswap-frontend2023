@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Token } from '@archerswap-sdk/sdk'
+import { Token } from '@archerswap-sdk'
 import { ButtonMenu, ButtonMenuItem, ModalBody } from 'packages/uikit'
 import styled from 'styled-components'
 import { TokenList } from '@uniswap/token-lists'
