@@ -1,5 +1,5 @@
 {
-  "111": {
+  "1115": {
     "WagyuFactory": "0x524dB42469a1Eb12E7f2b3fEefD9A1f880fC7A4C",
     "PancakeFactory_Init_Code_Hash": "0x3e587aafa830ed6729f6ad31bd15f244a5938c6c3dc057d4fcf2cbc0b1046987",
     "owner": "0x1a642f0E3c3aF545E7AcBD38b07251B3990914F1",
@@ -20,7 +20,7 @@
     "WAGStakingFactory": "0x211E287FD967a51D7A1F8c2Fb7788c6142e084b1",
     "WagyuRouter": "0x5F61a8Ef05470A74E4b17C567ff32d26F7A02646"
   },
-  "106": {
+  "1116": {
     "owner": "0x4105FAAD40d1e3320989806466dF30eF260E0e42",
     "Multicall2": "0x0747CFe82D3Bee998f634569FE2B0005dF9d8EDE",
     "WAGToken": "0xaBf26902Fd7B624e0db40D31171eA9ddDf078351",
