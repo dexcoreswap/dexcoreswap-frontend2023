@@ -1,4 +1,4 @@
-import { Trade, Percent, currencyEquals } from '@wagyu-swap/sdk'
+import { Trade, Percent, currencyEquals } from '@archerswap-sdk/sdk'
 import { ZERO_PERCENT, ONE_HUNDRED_PERCENT } from '../config/constants/index'
 
 // returns whether tradeB is better than tradeA by at least a threshold percentage amount

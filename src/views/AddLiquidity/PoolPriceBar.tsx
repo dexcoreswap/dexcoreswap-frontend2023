@@ -1,4 +1,4 @@
-import { Currency, Percent, Price } from '@wagyu-swap/sdk'
+import { Currency, Percent, Price } from '@archerswap-sdk/sdk'
 import { Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { AutoColumn } from '../../components/Layout/Column'

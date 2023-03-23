@@ -1,4 +1,4 @@
-import { CurrencyAmount, Price } from '@wagyu-swap/sdk'
+import { CurrencyAmount, Price } from '@archerswap-sdk/sdk'
 
 /**
  * Given certain amount if input and output tokens

@@ -1,4 +1,4 @@
-import { Currency } from '@wagyu-swap/sdk'
+import { Currency } from '@archerswap-sdk/sdk'
 import useTheme from 'hooks/useTheme'
 import { useCallback, useState } from 'react'
 import BnbWbnbNotice from './BnbWbnbNotice'

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Token } from '@wagyu-swap/sdk'
+import { Token } from '@archerswap-sdk/sdk'
 import { Flex, Text, ChevronUpIcon, ChevronDownIcon } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import PreviousBetsTable from './PreviousBetsTable'

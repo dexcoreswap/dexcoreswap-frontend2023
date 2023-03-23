@@ -1,4 +1,4 @@
-import { Currency } from '@wagyu-swap/sdk'
+import { Currency } from '@archerswap-sdk/sdk'
 import {
   ArrowDownIcon,
   Button,

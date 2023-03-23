@@ -1,4 +1,4 @@
-import { ChainId } from '@wagyu-swap/sdk'
+import { ChainId } from '@archerswap-sdk/sdk'
 import addresses from 'config/constants/contracts'
 import { Address } from 'config/constants/types'
 import { VaultKey } from 'state/types'

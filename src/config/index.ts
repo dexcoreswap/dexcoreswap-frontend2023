@@ -1,4 +1,4 @@
-import { ChainId } from '@wagyu-swap/sdk'
+import { ChainId } from '@archerswap-sdk/sdk'
 import BigNumber from 'bignumber.js/bignumber'
 import { BIG_TEN } from 'utils/bigNumber'
 

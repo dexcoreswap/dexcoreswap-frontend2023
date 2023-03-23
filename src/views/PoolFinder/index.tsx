@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { Currency, ETHER, JSBI, TokenAmount } from '@wagyu-swap/sdk'
+import { Currency, ETHER, JSBI, TokenAmount } from '@archerswap-sdk/sdk'
 import { Button, ChevronDownIcon, Text, AddIcon, useModal } from 'packages/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'

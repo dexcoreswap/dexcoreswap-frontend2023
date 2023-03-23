@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit'
-import { ChainId } from '@wagyu-swap/sdk'
+import { ChainId } from '@archerswap-sdk/sdk'
 
 // fired once when the app reloads but before the app renders
 // allows any updates to be applied to store data loaded from localStorage

@@ -1,4 +1,4 @@
-import { Token } from '@wagyu-swap/sdk'
+import { Token } from '@archerswap-sdk/sdk'
 import { Modal, InjectedModalProps } from 'packages/uikit'
 import ImportToken from 'components/SearchModal/ImportToken'
 import { useTranslation } from 'contexts/Localization'

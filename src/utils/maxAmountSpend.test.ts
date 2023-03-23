@@ -1,4 +1,4 @@
-import { CurrencyAmount, JSBI } from '@wagyu-swap/sdk'
+import { CurrencyAmount, JSBI } from '@archerswap-sdk/sdk'
 import { maxAmountSpend } from './maxAmountSpend'
 
 describe('maxAmountSpend', () => {

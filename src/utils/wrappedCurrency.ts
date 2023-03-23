@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, ETHER, Token, TokenAmount, WETH } from '@wagyu-swap/sdk'
+archerswap-sdkimport { ChainId, Currency, CurrencyAmount, ETHER, Token, TokenAmount, WETH } from '@archerswap-sdk/sdk'
 
 export function wrappedCurrency(currency: Currency | undefined, chainId: ChainId | undefined): Token | undefined {
   return chainId && currency === ETHER ? WETH[chainId] : currency instanceof Token ? currency : undefined

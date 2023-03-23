@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction, Percent } from '@wagyu-swap/sdk'
+archerswap-sdkimport { Currency, CurrencyAmount, Fraction, Percent } from '@archerswap-sdk/sdk'
 import { Button, Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { RowBetween, RowFixed } from '../../components/Layout/Row'

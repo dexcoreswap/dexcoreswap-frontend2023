@@ -1,4 +1,4 @@
-import { Percent } from '@wagyu-swap/sdk'
+import { Percent } from '@archerswap-sdk/sdk'
 import { warningSeverity } from 'utils/prices'
 import { ONE_BIPS } from '../../../config/constants'
 import { ErrorText } from './styleds'

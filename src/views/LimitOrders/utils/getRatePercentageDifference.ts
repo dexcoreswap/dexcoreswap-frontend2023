@@ -1,4 +1,4 @@
-import { Percent, Price } from '@wagyu-swap/sdk'
+import { Percent, Price } from '@archerswap-sdk/sdk'
 
 const getRatePercentageDifference = (currentMarketRate: Price, price: Price) => {
   if (currentMarketRate && price) {
