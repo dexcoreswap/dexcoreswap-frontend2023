@@ -4,7 +4,7 @@ import { CHAIN_ID } from './networks'
 
 const serializedTokens = serializeTokens()
 
-const farms: SerializedFarmConfig[] = [
+const lpAddresses: SerializedFarmConfig[] = [
   /**
    * These 3 farms (PID 0, 2, 3) should always be at the top of the file.
    */
