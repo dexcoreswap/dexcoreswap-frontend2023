@@ -10,7 +10,6 @@ import { getNftMarketContract } from 'utils/contractHelpers'
 import { NOT_ON_SALE_SELLER } from 'config/constants'
 import { pancakeBunniesAddress } from 'views/Nft/market/constants'
 import { formatBigNumber } from 'utils/formatBalance'
-import { getNftSaleAddress } from 'utils/addressHelpers'
 import nftMarketAbi from 'config/abi/nftMarket.json'
 import fromPairs from 'lodash/fromPairs'
 import {
@@ -450,17 +449,6 @@ export const getAccountNftsOnChainMarketData = async (
   account: string,
 ): Promise<TokenMarketData[]> => {
   try {
-    const getNftSaleAddress = getNftMarketAddress()
-    const collectionList = Object.values(collections)
-    const askCalls = collectionList.map((collection) => {
-      const { address: collectionAddress } = collection
-      return {
-        address: getNftSaleAddress,
-        name: 'viewAsksByCollectionAndSeller',
-        params: [collectionAddress, account, 0, 1000],
-      }
-    })
-
     const askCallsResultsRaw = await multicallv2(nftMarketAbi, askCalls, { requireSuccess: false })
     const askCallsResults = askCallsResultsRaw
       .map((askCallsResultRaw, askCallIndex) => {
