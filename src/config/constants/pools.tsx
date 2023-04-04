@@ -46,11 +46,12 @@ export const vaultPoolConfig = {
   },
 } as const
 
-const harvest: SerializedPoolConfig[] = [
+const pools: SerializedPoolConfig[] = [
   {
+    isFinished: true,
     sousId: 0,
-    stakingToken: serializedTokens.cake,
-    earningToken: serializedTokens.cake,
+    stakingToken: serializedTokens,
+    earningToken: serializedTokens,
     contractAddress: {
       97: '0xB4A466911556e39210a6bB2FaECBB59E4eB7E43d',
       1116: '0xc7887af5f95cdee2b7bbff47554104e8631751df',
@@ -62,9 +63,10 @@ const harvest: SerializedPoolConfig[] = [
     isFinished: false,
   },
   {
+    isFinished: true,
     sousId: 282,
-    stakingToken: serializedTokens.cake,
-    earningToken: serializedTokens.chr,
+    stakingToken: serializedTokens,
+    earningToken: serializedTokens,
     contractAddress: {
       1116: '0x7965675ea8A4053818097e0c150445a406ea0Fa0',
       97: '',
@@ -76,9 +78,10 @@ const harvest: SerializedPoolConfig[] = [
     version: 3,
   },
   {
+    isFinished: true,
     sousId: 281,
-    stakingToken: serializedTokens.cake,
-    earningToken: serializedTokens.MIX,
+    stakingToken: serializedTokens,
+    earningToken: serializedTokens,
     contractAddress: {
       1116: '0xf6a333f17cf10379b6B9c5604FBF6343cF5134f3',
       97: '',
@@ -87,4 +90,4 @@ const harvest: SerializedPoolConfig[] = [
   .filter((p) => !!p.contractAddress[CHAIN_ID])
   .map((p) => ({ ...p, isFinished: true }))
 
-export default [...harvest, ...finishedPools]
+export default [...pools, ...finishedPools]
