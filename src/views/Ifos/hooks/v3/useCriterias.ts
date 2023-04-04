@@ -1,7 +1,6 @@
 import { useMemo } from 'react'
 
 const mapCriteriasToQualifications = {
-  needQualifiedNFT: 'isQualifiedNFT',
   needQualifiedPoints: 'isQualifiedPoints',
 }
 

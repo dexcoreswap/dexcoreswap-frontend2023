@@ -22,7 +22,6 @@ import { useWeb3React } from '@web3-react/core'
 import { useTranslation } from 'contexts/Localization'
 import Container from 'components/Layout/Container'
 import { useProfile } from 'state/profile/hooks'
-import { nftsBaseUrl } from 'views/Nft/market/constants'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 
 interface TypeProps {
@@ -134,13 +133,6 @@ const IfoSteps: React.FC<TypeProps> = () => {
           </Flex>
         )
       }
-
-      return (
-        <Button as={RouterLink} to={`${nftsBaseUrl}/profile/${account.toLowerCase()}`}>
-          {t('Activate your Profile')}
-        </Button>
-      )
-    }
 
     switch (step) {
       case 0:

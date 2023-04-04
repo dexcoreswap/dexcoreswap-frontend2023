@@ -18,7 +18,6 @@ import {
   getTradingCompetitionContractFanToken,
   getTradingCompetitionContractMobox,
   getTradingCompetitionContractMoD,
-  getEasterNftContract,
   getErc721Contract,
   getCakeVaultV2Contract,
   getPredictionsContract,
@@ -29,8 +28,6 @@ import {
   getFarmAuctionContract,
   getBunnySpecialLotteryContract,
   getAnniversaryAchievementContract,
-  getNftMarketContract,
-  getNftSaleContract,
   getPancakeSquadContract,
   getErc721CollectionContract,
   getBunnySpecialXmasContract,
@@ -191,11 +188,6 @@ export const useTradingCompetitionContractMoD = (withSignerIfPossible = true) =>
   return useMemo(() => getTradingCompetitionContractMoD(signer), [signer])
 }
 
-export const useEasterNftContract = () => {
-  const { library } = useActiveWeb3React()
-  return useMemo(() => getEasterNftContract(library.getSigner()), [library])
-}
-
 export const useVaultPoolContract = (): CakeVaultV2 => {
   const { library } = useActiveWeb3React()
   return useMemo(() => getCakeVaultV2Contract(library.getSigner()), [library])
@@ -249,16 +241,6 @@ export const useAnniversaryAchievementContract = () => {
   return useMemo(() => getAnniversaryAchievementContract(library.getSigner()), [library])
 }
 
-export const useGalaxyNFTClaimingContract = () => {
-  const { library } = useActiveWeb3React()
-  return useMemo(() => getGalaxyNTFClaimingContract(library.getSigner()), [library])
-}
-
-export const useNftSaleContract = () => {
-  const { library } = useActiveWeb3React()
-  return useMemo(() => getNftSaleContract(library.getSigner()), [library])
-}
-
 export const usePancakeSquadContract = () => {
   const { library } = useActiveWeb3React()
   return useMemo(() => getPancakeSquadContract(library.getSigner()), [library])
@@ -271,11 +253,6 @@ export const useFarmAuctionContract = (withSignerIfPossible = true) => {
     [withSignerIfPossible, library, account],
   )
   return useMemo(() => getFarmAuctionContract(signer), [signer])
-}
-
-export const useNftMarketContract = () => {
-  const { library } = useActiveWeb3React()
-  return useMemo(() => getNftMarketContract(library.getSigner()), [library])
 }
 
 export const useErc721CollectionContract = (

@@ -2,13 +2,11 @@ import Path from 'path'
 import fs from 'fs'
 import translations from 'config/localization/translations.json'
 import teams from 'config/constants/teams'
-import { NftLocation } from 'state/nftMarket/types'
 
 const allTranslationKeys = Object.keys(translations)
 
 // when some keys are hard to be extracted from code
 const whitelist = [
-  ...Object.values(NftLocation),
   ...teams.map((t) => t.description),
   // NFT description moved to profile sdk
   `Oopsie daisy! Hiccup's had a bit of an accident. Poor little fella.`,

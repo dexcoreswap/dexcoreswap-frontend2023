@@ -18,7 +18,6 @@ import { useProfile } from 'state/profile/hooks'
 import { usePendingTransactions } from 'state/transactions/hooks'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import { useTranslation } from 'contexts/Localization'
-import { nftsBaseUrl } from 'views/Nft/market/constants'
 import WalletModal, { WalletView } from './WalletModal'
 import ProfileUserMenuItem from './ProfileUserMenuItem'
 import WalletUserMenuItem from './WalletUserMenuItem'
@@ -34,7 +33,6 @@ const UserMenu = () => {
   const [onPresentTransactionModal] = useModal(<WalletModal initialView={WalletView.TRANSACTIONS} />)
   const [onPresentWrongNetworkModal] = useModal(<WalletModal initialView={WalletView.WRONG_NETWORK} />)
   const hasProfile = isInitialized && !!profile
-  const avatarSrc = profile?.nft?.image?.thumbnail
   const [userMenuText, setUserMenuText] = useState<string>('')
   const [userMenuVariable, setUserMenuVariable] = useState<UserMenuVariant>('default')
   const isWrongNetwork: boolean = error && error instanceof UnsupportedChainIdError
@@ -65,15 +63,6 @@ const UserMenu = () => {
           {t('Recent Transactions')}
           {hasPendingTransactions && <RefreshIcon spin />}
         </UserMenuItem>
-        <UserMenuDivider />
-        <UserMenuItem
-          as="button"
-          disabled={isWrongNetwork}
-          onClick={() => router.push(`${nftsBaseUrl}/profile/${account.toLowerCase()}`)}
-        >
-          {t('Your NFTs')}
-        </UserMenuItem>
-        <ProfileUserMenuItem isLoading={isLoading} hasProfile={hasProfile} disabled={isWrongNetwork} />
         <UserMenuDivider />
         <UserMenuItem as="button" onClick={logout}>
           <Flex alignItems="center" justifyContent="space-between" width="100%">

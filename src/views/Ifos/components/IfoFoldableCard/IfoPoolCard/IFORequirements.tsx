@@ -3,35 +3,8 @@ import { Text, Flex, AccountIcon, TeamBattleIcon, Box, useTooltip, LinkExternal 
 import { useWeb3React } from '@web3-react/core'
 import { useTranslation } from 'contexts/Localization'
 
-import OkNFTIcon from './Icons/OkNFT'
 import OkProfilePointsIcon from './Icons/OkProfilePoints'
 import TransWithElement from '../../TransWithElement'
-
-const NotOkNFT = ({ admissionProfile }) => {
-  const { t } = useTranslation()
-
-  const keyword = '%Pancake Squad NFT%'
-
-  const rawText = t(`Set %Pancake Squad NFT% as Pancake Profile avatar`)
-
-  return (
-    <TransWithElement
-      text={rawText}
-      keyword={keyword}
-      element={
-        <>
-          <LinkExternal
-            style={{ display: 'inline' }}
-            href={`https://pancakeswap.finance/nfts/collections/${admissionProfile}`}
-          >
-            {t('Pancake Squad NFT')}
-          </LinkExternal>
-          <br />
-        </>
-      }
-    />
-  )
-}
 
 const NotOkProfilePoints = ({ pointThreshold }) => {
   const { account } = useWeb3React()

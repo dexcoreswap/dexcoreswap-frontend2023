@@ -73,8 +73,6 @@ describe('getActiveSubMenuItem', () => {
   })
 
   it('should return the item with the longest href when multiple items are found', () => {
-    // Given
-    const pathname = '/nfts/collections/0xDf7952B35f24aCF7fC0487D01c8d5690a60DBa07'
 
     // When
     const result = getActiveSubMenuItem({ pathname, menuItem: menuConfig(mockT)[3] })
@@ -95,8 +93,6 @@ describe('getActiveSubMenuItem', () => {
   })
 
   it('should return the item with the longest href when multiple items are found', () => {
-    // Given
-    const pathname = '/nfts/collections/0xDf7952B35f24aCF7fC0487D01c8d5690a60DBa07'
 
     // When
     const result = getActiveSubMenuItem({ pathname, menuItem: menuConfig(mockT)[3] })

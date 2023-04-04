@@ -53,10 +53,6 @@ export const getTradingCompetitionAddressMoD = () => {
   return getAddress(addresses.tradingCompetitionMoD)
 }
 
-export const getEasterNftAddress = () => {
-  return getAddress(addresses.easterNft)
-}
-
 export const getVaultPoolAddress = (vaultKey: VaultKey) => {
   if (!vaultKey) {
     return null
@@ -88,12 +84,6 @@ export const getFarmAuctionAddress = () => {
 }
 export const getAnniversaryAchievement = () => {
   return getAddress(addresses.AnniversaryAchievement)
-}
-export const getGalaxyNFTClaimingAddress = () => {
-  return getAddress(addresses.galaxyNftClaiming)
-}
-export const getNftSaleAddress = () => {
-  return getAddress(addresses.nftSale)
 }
 export const getPancakeSquadAddress = () => {
   return getAddress(addresses.pancakeSquad)

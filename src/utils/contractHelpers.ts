@@ -19,7 +19,6 @@ import {
   getPointCenterIfoAddress,
   getClaimRefundAddress,
   getTradingCompetitionAddressEaster,
-  getEasterNftAddress,
   getCakeVaultAddress,
   getMulticallAddress,
   getBunnySpecialCakeVaultAddress,
@@ -27,14 +26,11 @@ import {
   getBunnySpecialLotteryAddress,
   getFarmAuctionAddress,
   getAnniversaryAchievement,
-  getNftMarketAddress,
-  getNftSaleAddress,
   getPancakeSquadAddress,
   getTradingCompetitionAddressFanToken,
   getTradingCompetitionAddressMobox,
   getTradingCompetitionAddressMoD,
   getBunnySpecialXmasAddress,
-  getGalaxyNFTClaimingAddress,
 } from 'utils/addressHelpers'
 
 // ABI
@@ -60,7 +56,6 @@ import tradingCompetitionEasterAbi from 'config/abi/tradingCompetitionEaster.jso
 import tradingCompetitionFanTokenAbi from 'config/abi/tradingCompetitionFanToken.json'
 import tradingCompetitionMoboxAbi from 'config/abi/tradingCompetitionMobox.json'
 import tradingCompetitionMoDAbi from 'config/abi/tradingCompetitionMoD.json'
-import easterNftAbi from 'config/abi/easterNft.json'
 import cakeVaultV2Abi from 'config/abi/cakeVaultV2.json'
 import predictionsAbi from 'config/abi/predictions.json'
 import chainlinkOracleAbi from 'config/abi/chainlinkOracle.json'
@@ -71,9 +66,6 @@ import bunnySpecialLotteryAbi from 'config/abi/bunnySpecialLottery.json'
 import bunnySpecialXmasAbi from 'config/abi/bunnySpecialXmas.json'
 import farmAuctionAbi from 'config/abi/farmAuction.json'
 import anniversaryAchievementAbi from 'config/abi/anniversaryAchievement.json'
-import galaxyNFTClaimingAbi from 'config/abi/galaxyNFTClaiming.json'
-import nftMarketAbi from 'config/abi/nftMarket.json'
-import nftSaleAbi from 'config/abi/nftSale.json'
 import pancakeSquadAbi from 'config/abi/pancakeSquad.json'
 import erc721CollectionAbi from 'config/abi/erc721collection.json'
 
@@ -101,14 +93,10 @@ import type {
   ClaimRefund,
   TradingCompetitionEaster,
   TradingCompetitionFanToken,
-  EasterNft,
   Multicall,
   BunnySpecialCakeVault,
   BunnySpecialPrediction,
   BunnySpecialLottery,
-  GalaxyNFTClaiming,
-  NftMarket,
-  NftSale,
   PancakeSquad,
   Erc721collection,
   PointCenterIfo,
@@ -199,10 +187,6 @@ export const getTradingCompetitionContractMobox = (signer?: Signer | Provider) =
 export const getTradingCompetitionContractMoD = (signer?: Signer | Provider) => {
   return getContract(tradingCompetitionMoDAbi, getTradingCompetitionAddressMoD(), signer) as TradingCompetitionMoD
 }
-
-export const getEasterNftContract = (signer?: Signer | Provider) => {
-  return getContract(easterNftAbi, getEasterNftAddress(), signer) as EasterNft
-}
 export const getCakeVaultV2Contract = (signer?: Signer | Provider) => {
   return getContract(cakeVaultV2Abi, getCakeVaultAddress(), signer) as CakeVaultV2
 }
@@ -234,16 +218,6 @@ export const getFarmAuctionContract = (signer?: Signer | Provider) => {
 }
 export const getAnniversaryAchievementContract = (signer?: Signer | Provider) => {
   return getContract(anniversaryAchievementAbi, getAnniversaryAchievement(), signer) as AnniversaryAchievement
-}
-export const getGalaxyNTFClaimingContract = (signer?: Signer | Provider) => {
-  return getContract(galaxyNFTClaimingAbi, getGalaxyNFTClaimingAddress(), signer) as GalaxyNFTClaiming
-}
-
-export const getNftMarketContract = (signer?: Signer | Provider) => {
-  return getContract(nftMarketAbi, getNftMarketAddress(), signer) as NftMarket
-}
-export const getNftSaleContract = (signer?: Signer | Provider) => {
-  return getContract(nftSaleAbi, getNftSaleAddress(), signer) as NftSale
 }
 export const getPancakeSquadContract = (signer?: Signer | Provider) => {
   return getContract(pancakeSquadAbi, getPancakeSquadAddress(), signer) as PancakeSquad

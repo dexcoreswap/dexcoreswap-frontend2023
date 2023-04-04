@@ -48,11 +48,6 @@ export function getBscScanLink(
   }
 }
 
-export function getBscScanLinkForNft(collectionAddress: string, tokenId: string): string {
-  const chainId = CHAIN_ID
-  return `${BASE_BSC_SCAN_URLS[chainId]}/token/${collectionAddress}?a=${tokenId}`
-}
-
 // add 10%
 export function calculateGasMargin(value: BigNumber): BigNumber {
   return value.mul(BigNumber.from(10000).add(BigNumber.from(1000))).div(BigNumber.from(10000))

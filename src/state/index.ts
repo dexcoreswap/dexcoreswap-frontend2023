@@ -23,7 +23,6 @@ import lists from './lists/reducer'
 import lotteryReducer from './lottery'
 import mint from './mint/reducer'
 import multicall from './multicall/reducer'
-import nftMarketReducer from './nftMarket/reducer'
 import poolsReducer from './pools'
 import swap from './swap/reducer'
 import transactions from './transactions/reducer'
@@ -75,7 +74,6 @@ const persistedReducer = persistReducer(
     pools: poolsReducer,
     lottery: lotteryReducer,
     info: infoReducer,
-    nftMarket: nftMarketReducer,
 
     limitOrders,
 

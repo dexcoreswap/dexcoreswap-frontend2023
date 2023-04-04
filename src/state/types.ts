@@ -15,7 +15,6 @@ import {
 import { Token, ChainId } from '@dexcoreswap/sdk'
 import { TokenInfo, TokenList, Tags } from '@uniswap/token-lists'
 import { parseUnits } from '@ethersproject/units'
-import { NftToken, State as NftMarketState } from './nftMarket/types'
 
 /**
  * Token instances created from token info.
@@ -171,7 +170,6 @@ export interface Profile {
   tokenId: number
   isActive: boolean
   username: string
-  nft?: NftToken
   team?: Team
   hasRegistered: boolean
 }
@@ -635,5 +633,4 @@ export interface State {
   pools: PoolsState
   predictions: PredictionsState
   lottery: LotteryState
-  nftMarket: NftMarketState
 }

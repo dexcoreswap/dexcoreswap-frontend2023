@@ -81,8 +81,6 @@ export interface BlockResponse {
 
 const FixedSubgraphHealthIndicator = () => {
   const { pathname } = useRouter()
-  const isOnNftPages = pathname.includes('nfts')
-  return isOnNftPages ? <SubgraphHealthIndicator subgraphName="pancakeswap/nft-market" /> : null
 }
 
 export const SubgraphHealthIndicator: React.FC<{

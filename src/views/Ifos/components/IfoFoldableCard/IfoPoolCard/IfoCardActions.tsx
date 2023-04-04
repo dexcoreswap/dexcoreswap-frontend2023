@@ -4,7 +4,6 @@ import { useWeb3React } from '@web3-react/core'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import { Ifo, PoolIds } from 'config/constants/types'
 import { WalletIfoData, PublicIfoData } from 'views/Ifos/types'
-import { nftsBaseUrl } from 'views/Nft/market/constants'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import ContributeButton from './ContributeButton'
 import ClaimButton from './ClaimButton'
@@ -43,21 +42,6 @@ const IfoCardActions: React.FC<Props> = ({
   if (!account) {
     return <ConnectWalletButton width="100%" />
   }
-
-  if (!hasProfile) {
-    return (
-      <Button as={NextLinkFromReactRouter} to={`${nftsBaseUrl}/profile/${account.toLowerCase()}`} width="100%">
-        {t('Activate your Profile')}
-      </Button>
-    )
-  }
-
-  const needClaim =
-    publicIfoData.status === 'finished' &&
-    !userPoolCharacteristics.hasClaimed &&
-    (userPoolCharacteristics.offeringAmountInToken.isGreaterThan(0) ||
-      userPoolCharacteristics.refundingAmountInLP.isGreaterThan(0))
-
   if (needClaim) {
     return <ClaimButton poolId={poolId} ifoVersion={ifo.version} walletIfoData={walletIfoData} />
   }
