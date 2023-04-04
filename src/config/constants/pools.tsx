@@ -46,7 +46,7 @@ export const vaultPoolConfig = {
   },
 } as const
 
-const poolCategory: SerializedPoolConfig[] = [
+const : SerializedPoolConfig[] = [
   {
     sousId: 0,
     stakingToken: serializedTokens.cake,
@@ -87,4 +87,4 @@ const poolCategory: SerializedPoolConfig[] = [
   .filter((p) => !!p.contractAddress[CHAIN_ID])
   .map((p) => ({ ...p, isFinished: true }))
 
-export default [...poolCategory, ...finishedPools]
+export default [..., ...finishedPools]
