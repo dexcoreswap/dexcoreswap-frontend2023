@@ -68,6 +68,9 @@ export const getCakeVaultAddress = () => {
   return getAddress(addresses.cakeVault)
 }
 
+export const getChainlinkOracleAddress = () => {
+  return getAddress(addresses.chainlinkOracle)
+}
 export const getBunnySpecialCakeVaultAddress = () => {
   return getAddress(addresses.bunnySpecialCakeVault)
 }
