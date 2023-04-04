@@ -449,46 +449,6 @@ export const getAccountNftsOnChainMarketData = async (
   account: string,
 ): Promise<TokenMarketData[]> => {
   try {
-    const askCallsResultsRaw = await multicallv2(nftMarketAbi, askCalls, { requireSuccess: false })
-    const askCallsResults = askCallsResultsRaw
-      .map((askCallsResultRaw, askCallIndex) => {
-        if (!askCallsResultRaw?.tokenIds || !askCallsResultRaw?.askInfo || !collectionList[askCallIndex]?.address)
-          return null
-        return askCallsResultRaw.tokenIds
-          .map((tokenId, tokenIdIndex) => {
-            if (!tokenId || !askCallsResultRaw.askInfo[tokenIdIndex] || !askCallsResultRaw.askInfo[tokenIdIndex].price)
-              return null
-
-            const currentAskPrice = formatBigNumber(askCallsResultRaw.askInfo[tokenIdIndex].price)
-
-            return {
-              collection: { id: collectionList[askCallIndex].address.toLowerCase() },
-              tokenId: tokenId.toString(),
-              account,
-              isTradable: true,
-              currentAskPrice,
-            }
-          })
-          .filter(Boolean)
-      })
-      .flat()
-      .filter(Boolean)
-
-    return askCallsResults
-  } catch (error) {
-    console.error('Failed to fetch NFTs onchain market data', error)
-    return []
-  }
-}
-
-export const getNftsMarketData = async (
-  where = {},
-  first = 1000,
-  orderBy = 'id',
-  orderDirection: 'asc' | 'desc' = 'desc',
-  skip = 0,
-): Promise<TokenMarketData[]> => {
-  try {
     const res = await request(
       GRAPH_API_NFTMARKET,
       gql`
