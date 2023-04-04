@@ -1,4 +1,4 @@
-import { CurrencyAmount, Price } from '@pancakeswap/sdk'
+import { CurrencyAmount, Price } from '@dexcoreswap/sdk'
 
 /**
  * Given certain amount if input and output tokens
