@@ -55,4 +55,4 @@ const lpAddresses: SerializedFarmConfig[] = [
   },
 ].filter((f) => !!f.lpAddresses[CHAIN_ID])
 
-export default farms
+export default lpAddresses
