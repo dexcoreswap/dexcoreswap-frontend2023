@@ -450,12 +450,12 @@ export const getAccountNftsOnChainMarketData = async (
   account: string,
 ): Promise<TokenMarketData[]> => {
   try {
-    const nftMarketAddress = getNftMarketAddress()
+    const getNftSaleAddress = getNftSaleAddress()
     const collectionList = Object.values(collections)
     const askCalls = collectionList.map((collection) => {
       const { address: collectionAddress } = collection
       return {
-        address: nftMarketAddress,
+        address: getNftSaleAddress,
         name: 'viewAsksByCollectionAndSeller',
         params: [collectionAddress, account, 0, 1000],
       }
