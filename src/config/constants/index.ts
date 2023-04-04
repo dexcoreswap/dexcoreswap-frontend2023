@@ -1,9 +1,9 @@
 import { ChainId, JSBI, Percent, Token } from '@dexcoreswap/sdk'
 import { BigNumber } from '@ethersproject/bignumber'
 import { mainnetTokens, testnetTokens } from './tokens'
-
+// Archeswap router
 export const ROUTER_ADDRESS = {
-  [ChainId.MAINNET]: '0x10ED43C718714eb63d5aA57B78B54704E256024E',
+  [ChainId.MAINNET]: '0x74f56a7560ef0c72cf6d677e3f5f51c2d579ff15',
   [ChainId.TESTNET]: '0xD99D1c33F9fC3444f8101754aBC46c52416550D1',
 }
 
